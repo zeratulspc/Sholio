@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:slio/ui/home.dart';
 
+import 'controller/homeController.dart';
+
 void main() {
+  Get.put<HomeController>(HomeController());
   runApp(const Slio());
 }
 
@@ -16,7 +19,7 @@ class Slio extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home()
+      home: Home()
     );
   }
 }
