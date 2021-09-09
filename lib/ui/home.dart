@@ -11,6 +11,12 @@ class Home extends StatelessWidget {
     Colors.red,Colors.yellow,Colors.orange,Colors.green,Colors.blue,Colors.indigo,Colors.purple
   ];
 
+  Widget getIcon(IconData icon) => Icon(
+    icon,
+    color:Colors.white,
+    size: 32,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,51 +37,75 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child:Container(
+                  width:Get.width,
+                  height:Get.height/3,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.black45,Colors.transparent],
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter
+                    ),
+
+                  ),
+                ),
+              ),
               Container(
+                margin:const EdgeInsets.symmetric(vertical: 15,horizontal: 15),
                 height: Get.height,
                 width:Get.width,
                 child: SafeArea(
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Expanded(
-                        child: Column(
-                          mainAxisAlignment:MainAxisAlignment.end,
-                          crossAxisAlignment:CrossAxisAlignment.start,
-                          children: [
-                            Text("타이틀"),
-                            Text("디스크립션")
-                          ],
+                        child: Container(
+                          margin: const EdgeInsets.only(bottom: 10),
+                          child: Wrap(
+                            direction:Axis.vertical,
+                            alignment:WrapAlignment.end,
+                            crossAxisAlignment:WrapCrossAlignment.start,
+                            children: const [
+                              Text(
+                                "TEST_TEST_TEST",
+                                style:TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text(
+                                "DESCRIPTIONDESCRIPTIONDESCRIPTION\nDESCRIPTIONDESCRIPTION",
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style:TextStyle(
+                                    color: Colors.white60,
+                                    fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Column(
                         mainAxisAlignment:MainAxisAlignment.end,
                         children: [
                           IconButton(
-                            icon:const Icon(
-                              Icons.more_vert,
-                              color: Colors.white,
-                            ),
+                            icon: getIcon(Icons.more_vert),
                             onPressed: (){},
                           ),
                           IconButton(
-                            icon:const Icon(
-                              Icons.thumb_up,
-                              color: Colors.white,
-                            ),
+                            icon: getIcon(Icons.thumb_up),
                             onPressed: (){},
                           ),
                           IconButton(
-                            icon:const Icon(
-                              Icons.thumb_down,
-                              color: Colors.white,
-                            ),
+                            icon: getIcon(Icons.comment),
                             onPressed: (){},
                           ),
                           IconButton(
-                            icon:const Icon(
-                              Icons.share,
-                              color: Colors.white,
-                            ),
+                            icon: getIcon(Icons.share),
                             onPressed: (){},
                           ),
                         ],
