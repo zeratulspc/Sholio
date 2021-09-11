@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deff9ed9-8b46-4e43-b0ab-9b6868abb9ea" name="Default Changelist" comment="불필요한 파일 제거">
-      <change beforePath="$PROJECT_DIR$/.idea/Slio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Slio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+    <list default="true" id="deff9ed9-8b46-4e43-b0ab-9b6868abb9ea" name="Default Changelist" comment="스크롤 로직 변경">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-09__8_51__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-09__8_51__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\BS\.android\avd\Pixel_3_XL_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\zeratulspc\.android\avd\Pixel_3_XL_API_30_2.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -71,14 +71,7 @@
       <option name="project" value="LOCAL" />
       <updated>1631193821873</updated>
     </task>
-    <task id="LOCAL-00004" summary="불필요한 파일 제거">
-      <created>1631234424166</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1631234424166</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +101,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="home ui 변경" />
     <MESSAGE value="스크롤 로직 변경" />
-    <MESSAGE value="불필요한 파일 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="불필요한 파일 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="스크롤 로직 변경" />
   </component>
 </project>
