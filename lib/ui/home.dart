@@ -31,21 +31,16 @@ class Home extends StatelessWidget {
             scrollDirection: Axis.vertical,
             itemCount: 10,
             itemBuilder: (context, i) {
-              return PageView.builder(
-                itemCount: 5,
-                itemBuilder: (context, j) {
-                  return Container(
-                    color: randomColor[Random().nextInt(randomColor.length-1)],
-                    height: Get.height,
-                    width: Get.width,
-                    child: Center(
-                      child: Text(
-                        "$i : $j",
-                        style:const TextStyle(fontSize:24),
-                      ),
-                    ),
-                  );
-                },
+              return Container(
+                color: randomColor[Random().nextInt(randomColor.length-1)],
+                height: Get.height,
+                width: Get.width,
+                child: Center(
+                  child: Text(
+                    "$i",
+                    style:const TextStyle(fontSize:24),
+                  ),
+                ),
               );
             }
           ),
